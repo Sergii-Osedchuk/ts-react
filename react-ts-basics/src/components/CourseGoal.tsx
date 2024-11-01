@@ -1,6 +1,8 @@
-import { type PropsWithChildren } from "react";
+import { type FC, type PropsWithChildren } from "react";
 
-const CourseGoal = ({ title, children }: PropsWithChildren<{title: string}>) => {
+type CourseGoalProps = PropsWithChildren<{title: string}>
+
+const CourseGoal: FC<CourseGoalProps> = ({ title, children }) => {
   return (
     <article>
       <div>
